@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan&family=Boogaloo&display=swap');
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #99D5C9   ;
+  --secondary-color: #F7FF58 ;
+  --accent1-color: #084B83;
+  --accent2-color: #EB9486;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Allan";
+  --paragraph-font: "Boogaloo";
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #084B83;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #084B83; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #99D5C9  ;
+  --nav-link-color: var(--accent2-color);
+  --nav-background-color: var(--accent1-color);
+  --nav-hover-link-color: #FFC9B5;
+  --nav-hover-background-color: var(--accent2-color);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--secondary-color);
+}
+
+.logo, .icon {
+    width: 80px;
+}
+
+nav a {
+    text-align: center;
+    color:var(--nav-link-color);
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.home-title {
+    color: var(--headline-color-on-color);
+}
+
+h4 {
+    color: var(--headline-color-on-color);
+}
+
+.button-box {
+    text-align: center;
+}
+
+.book, .join {
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+.book:hover, .join:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+main section{
+    text-align: center;
+}
+
+#background {
+    background-color: var(--secondary-color);
+    height: 725px;
+}
+
+.msg {
+    background-color: var(--paragraph-background-color);
+}
+
+.msg h2 {
+    color: var(--secondary-color);
+}
+
+.msg p {
+    color: var(--paragraph-color-on-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+footer p {
+    font-size: 1.2em;
+}
+footer a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+footer p a:hover {
+    color: var(--nav-hover-link-color);
+}
