@@ -22,6 +22,7 @@
   --nav-hover-background-color: var(--accent2-color);
 }
 
+
 body {
     background-color: var(--primary-color);
     font-family: var(--paragraph-font);
@@ -44,6 +45,10 @@ header {
     background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: 150px auto;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    border-bottom: var(--accent1-color) solid 6px;
 }
 
 #logo-link {
@@ -78,7 +83,8 @@ nav a:hover {
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px; 
+    margin-top: -4px; 
+
 }
 #hero-box {
     grid-column: 1/4;
@@ -99,8 +105,25 @@ nav a:hover {
 #hero-msg h4 {
     color: white;
 }
-             
+#wide-river {
+    width: 100%;
+    margin-top: 96px;
+}
 
+#faq-container {
+    margin: 30px;
+}
+.faq {
+    border: var(--accent1-color) solid 6px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: var(--secondary-color);
+}
+
+.title {
+    color:white;
+    text-shadow: black 5px 5px;
+}
 .home-title {
     color: var(--headline-color-on-color);
     font-family: var(--heading-font);
@@ -213,9 +236,11 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-top: var(--accent1-color) solid 6px;
 }
 footer p {
     font-size: 1.2em;
+    color: var(--nav-link-color)
 }
 footer a {
     color: var(--nav-link-color);
