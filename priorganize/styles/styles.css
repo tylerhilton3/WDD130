@@ -55,21 +55,41 @@ header {
 }
 footer {
   background-color: var(--primary-color);
-  width: 100%;
+  width: 100;
   margin-top: auto;
-  height: 150px;
+  height: 80px;
+  padding: 20px;
 }
 .header-content {
   display: flex;
   justify-content: center;
   align-self: center;
 }
+
+
+#copyright {
+  transform: translateY(-46px);
+  font-family: Lato;
+  color: var(--secondary-color);
+  margin: 0;
+}
+.social-media {
+  display: flex;
+}
+.social-media img {
+  transform: translateY(4px);
+  max-width: 75px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+#twitter {
+  border-radius: 23px;
+}
+
 .logo {
   width: 150px;
   border-radius: 5px;
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
 }
 
 p {
@@ -77,25 +97,6 @@ p {
   color: var(--paragraph-color-on-white);
   padding: 1em;
   font-weight: 300;
-}
-
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-  color: white;
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
-}
-
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
 }
 
 nav {
@@ -111,8 +112,6 @@ nav a {
   margin: 10px;
   margin-left: 20px;
   margin-right: 20px;
-}
-nav a:link, nav a:visited {
   color: var(--nav-link-color);
 }
 nav a:hover {
