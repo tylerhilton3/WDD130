@@ -4,7 +4,7 @@
   --primary-color: #427BD2;
   --primary-rgb: (66,123,210);
   --secondary-color: #000732;
-  --secondary-rgb: (0,7,50)
+  --secondary-rgb: (0,7,50);
   --accent1-color: #FCDEBE;
   --accent2-color: #2C514C;
 
@@ -39,6 +39,25 @@ p {
   font-family: var(--paragraph-font);
   padding: 1em;
   font-weight: 300;
+}
+nav {
+  line-height: 3em;
+  font-size: 1.2em;
+  align-items: center;
+}
+nav a {
+  border-radius: 10px;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 
 header {
@@ -77,6 +96,30 @@ header {
   grid-column: 2/3;
   grid-row: 1/2;
   height: 100%;
+  display: grid;
+  grid-template-columns: 5fr 5fr 1fr;
+  grid-template-rows: 30% 1fr 0.5fr 1fr 0.5fr;
+}
+#review-one {
+  grid-row: 2/3;
+}
+#review-two {
+  grid-row: 4/5;
+}
+.reviews {
+  grid-column: 2/3;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 15px 1fr 3fr;
+  grid-template-rows: 15px 40% 50%;
+}
+.pfp {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 100%;
+  border-radius: 50%;
+  
 }
 
 
@@ -106,24 +149,4 @@ footer {
 }
 #twitter {
   border-radius: 23px;
-}
-
-nav {
-  line-height: 3em;
-  font-size: 1.2em;
-  align-items: center;
-}
-nav a {
-  border-radius: 10px;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
-  margin: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: var(--nav-link-color);
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
 }
