@@ -147,7 +147,11 @@ header {
   grid-column: 2/4;
   grid-row: 4/5;
   font-size: 1.2em;
+  padding: 0% 4% 0% 3%;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
+
 
 #todo-cont {
   margin: 10% 5%;
@@ -182,8 +186,14 @@ header {
   border: solid var(--secondary-color);
   width: 30%;
   text-align: center;
+  align-self: center;
+  margin: 10%;
+  margin-top: 0;
+  padding: 10px;
 }
-
+#bottom-engine {
+  padding: 20px;
+}
 
 
 footer {
