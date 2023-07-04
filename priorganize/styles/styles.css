@@ -152,7 +152,6 @@ header {
   margin-bottom: 0;
 }
 
-
 #todo-cont {
   margin: 10% 5%;
   display: grid;
@@ -183,7 +182,7 @@ header {
 
 .invitation {
   border-radius: 10px;
-  border: solid var(--secondary-color);
+  border: solid var(--secondary-color) 5px;
   width: 30%;
   text-align: center;
   align-self: center;
@@ -195,6 +194,40 @@ header {
   padding: 20px;
 }
 
+#faq-head {
+  margin: 180px 100px 0px 100px;
+  display: flex;
+}
+#faq-title {
+  align-self: center;
+}
+#question-mark {
+  margin-left: auto;
+  border-radius: 50%;
+  width: 10%;
+}
+.faq-box {
+  font-family: Lato;
+  margin: 3%;
+  border: var(--secondary-color) solid 5px;
+  padding: 1%;
+  border-radius: 10px;
+}
+.q {
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 10px;
+}
+.a {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.check1 {
+  margin-right:6% ;
+}
+#bottom {
+  margin: 5%;
+}
 
 footer {
   background-color: var(--primary-color);
