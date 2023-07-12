@@ -2,9 +2,7 @@
 
 :root {
   --primary-color: #427BD2;
-  --primary-rgb: (66,123,210);
   --secondary-color: #000732;
-  --secondary-rgb: (0,7,50);
   --accent1-color: #FCDEBE;
   --accent2-color: #2C514C;
 
@@ -99,7 +97,6 @@ header {
 }
 #review-cont {
   background: linear-gradient(to left, rgba(0,7,50,1), rgba(0,7,50,0));
-  background: radial-gradient();
   z-index: 6;
   grid-column: 2/3;
   grid-row: 1/2;
@@ -249,7 +246,7 @@ header {
 
 footer {
   background-color: var(--primary-color);
-  width: 100;
+  width: 100%;
   margin-top: auto;
   height: 80px;
   padding: 20px;
